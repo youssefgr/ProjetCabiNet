@@ -34,7 +34,7 @@ class User
     #[ORM\Column(length: 255)]
     private ?string $dn = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(type: "text", nullable: true)]
     private ?string $descr = null;
 
     #[ORM\Column(length: 255)]
